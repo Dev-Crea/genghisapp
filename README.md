@@ -4,7 +4,7 @@ The single-file MongoDB admin app for docker apps.
 
 ```
 genghisapp:
-  image: dev-crea/genghisapp
+  image: devcrea/genghisapp
   links:
   - database
 ```
