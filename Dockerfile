@@ -7,4 +7,4 @@ RUN gem install --no-ri --no-rdoc bson_ext:1.9.2 genghisapp
 
 EXPOSE 5000
 
-CMD genghisapp --no-launch --foreground --port=5000
+CMD genghisapp --no-launch --foreground --port=5000 --servers ${DB_PORT_27017_TCP_ADDR}:${DB_PORT_27017_TCP_PORT}/${DB_NAME}
